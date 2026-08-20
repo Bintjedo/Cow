@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CowSMP | Home</title>
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+    <!-- Koppeling naar je CSS map -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--Navigatie Bar-->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="regels.html" class="nav-link active">Regels</a>
+        </div>
+
+    </nav>
+
+    <!-- Header met Logo -->
+    <header class="header">
+        <img src="https://cdn.craftingstore.net/rPPmDHlLQ1/a3165e58c7725483e415d0d8efcbe782/kgyyatqgi4at7mh94fpz.png" alt="CowSMP Logo" class="logo">
+        <h1 class="titles">Welkom op CowSMP</h1>
+    </header>
+
+    <!-- Hoofdinhoud van de Homepagina -->
+    <main class="container">
+        <section class="card" style="text-align: center;">
+            <h2>Join onze Discord!</h2>
+            <p class="subtitle">Blijf op de hoogte van alle updates en gezelligheid.</p>
+            
+            <!-- Coole opvallende knop -->
+            <div style="margin: 20px 0;">
+                <a href="https://discord.gg" target="_blank" class="btn btn-discord" style="display: inline-block; padding: 15px 40px;">
+                    → KLIK HIER ←
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Vaste Onderbalk (Footer) -->
+    <footer class="footer">
+        <p>&copy; 2026 CowSMP. Alle rechten voorbehouden.</p>
+        <p class="disclaimer">Wij zijn niet verbonden met Mojang Studios.</p>
+        <button id="openSupport" class="support-link">Support</button>
+    </footer>
+
+    <!-- Support Popup (Modal) -->
+    <div id="supportModal" class="modal-overlay">
+        <div class="modal">
+            <button id="closeSupport" class="close-btn">&times;</button>
+            <h3>Hulp Nodig?</h3>
+            <p>Kies een van de opties om contact op te nemen met ons team.</p>
+            <div class="modal-buttons">
+                <a href="https://discord.gg" target="_blank" class="btn btn-discord">Discord Server</a>
+                <a href="mailto:cowsmp@outlook.com" class="btn btn-mail">E-mail Support</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Koppeling naar je JS map voor de werkende support knop -->
+    <script src="js/script.js"></script>
+</body>
+</html>
