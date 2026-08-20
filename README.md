@@ -1,2 +1,1 @@
-Cowsmp
-Nothing to show
+COWSMP site. Nothing else 
