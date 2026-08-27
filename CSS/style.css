@@ -1,0 +1,264 @@
+/* CSS Bestanden voor CowSMP Regels */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e0f7fa; /* Lightcyan look */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-bottom: 80px; /* Ruimte voor de vaste footer */
+}
+
+/* Header & Titel */
+.header {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.logo {
+    height: 100px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+.titles {
+    font-family: "Concert One", sans-serif;
+    font-size: 3rem;
+    color: #2e7d32; /* Minecraft groen accent */
+    text-shadow: 2px 2px 0px #fff;
+}
+
+/* Inhoud containers */
+.container {
+    max-width: 800px;
+    width: 90%;
+    margin: 0 auto 40px auto;
+}
+
+/* Regel Kaarten */
+.card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border-left: 6px solid #4caf50;
+}
+
+.card h2 {
+    font-family: "Concert One", sans-serif;
+    color: #1b5e20;
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 0.95rem;
+    color: #666;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.card ul {
+    list-style-position: inside;
+    list-style-type: square;
+}
+
+.card li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+    font-size: 1.05rem;
+}
+
+/* Vaste Onderbalk */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1c1c1c;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 20px;
+    z-index: 100;
+    box-shadow: 0 -4px 10px rgba(0,0,0,0.2);
+}
+
+.footer p {
+    font-size: 0.85rem;
+    opacity: 0.8;
+    margin-bottom: 4px;
+}
+
+.footer .disclaimer {
+    font-size: 0.75rem;
+    opacity: 0.5;
+    margin-bottom: 8px;
+}
+
+.support-link {
+    background: none;
+    border: none;
+    color: #4caf50;
+    font-family: "Concert One", sans-serif;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+.support-link:hover {
+    color: #81c784;
+}
+
+/* Popup / Modal Styling */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 1000;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    max-width: 400px;
+    width: 90%;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    transform: translateY(-20px);
+    transition: transform 0.3s ease;
+}
+
+.modal-overlay.active .modal {
+    transform: translateY(0);
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #aaa;
+}
+
+.close-btn:hover {
+    color: #333;
+}
+
+.modal h3 {
+    font-family: "Concert One", sans-serif;
+    font-size: 1.8rem;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.modal p {
+    color: #555;
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+}
+
+/* Knoppen in de popup */
+.modal-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.btn {
+    display: block;
+    padding: 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: "Concert One", sans-serif;
+    font-size: 1.2rem;
+    color: white;
+    transition: transform 0.2s, background-color 0.2s;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-discord {
+    background-color: #5865F2; /* Originele Discord kleur */
+}
+
+.btn-discord:hover {
+    background-color: #4752C4;
+}
+
+.btn-mail {
+    background-color: #0078d4; /* Outlook Blauw */
+}
+
+.btn-mail:hover {
+    background-color: #005a9e;
+}
+/* Navigatiebalk Styling */
+.navbar {
+    background-color: #1c1c1c; /* Donkere balk net als de footer */
+    padding: 15px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Ruimte tussen de knoppen */
+}
+
+.nav-link {
+    font-family: 'Concert One', display; /* Dit dwingt het Concert One lettertype af */
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.4rem; /* Iets groter gemaakt zodat het gamedesign eruit springt */
+    padding: 5px 15px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+    color: #4caf50; /* Wordt groen als je erover zweeft */
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.nav-link.active {
+    color: #4caf50;
+    border-bottom: 3px solid #4caf50; /* Groen streepje onder de huidige pagina */
+}
+
